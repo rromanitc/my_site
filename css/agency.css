@@ -152,6 +152,26 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
+
+#text-center_ser{
+
+
+  text-align: center;
+  display: block;
+}
+
+.text-center{
+
+  text-align: center;
+  display: flex;
+
+}
+
+.col-md{
+
+  text-align: center!important;
+}
+
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 300px;
@@ -169,7 +189,7 @@ header.masthead {
       margin-bottom: 50px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; } }
 
-.service-heading {
+.service-mid {
   margin: 15px 0;
   text-transform: none; }
 
