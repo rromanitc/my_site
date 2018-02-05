@@ -1,20 +1,76 @@
-/*!
- * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
- */
 body {
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+p {
+  line-height: 1.75; }
 
 a {
-  color: #fed136; 
-}
+  color: #fed136; }
+  a:hover {
+    color: #fec503; }
 
+.text-primary {
+  color: #fed136 !important; }
 
-.nav {
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#nav {
   background-color: #212529; 
 }
+
+#nav-buttons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav-buttons-list {
+    float: right;
+}
+
+#nav-buttons-list-bootstrap{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#nav-buttons-list-bootstrap a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #fed136;
+}
+
+#nav-buttons-list-bootstrap a:hover {
+    background-color: #111;
+}
+
+
+.nav-buttons-list a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-buttons-list a:hover {
+    background-color: #111;
+}
+
 
 #header-img {
   text-align: center;
@@ -35,9 +91,28 @@ a {
   margin-bottom: 25px;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
+#intro-text-bottom {
+  width: 200px;
+  height: 70px;
+  background-color: #fed136;
+  margin: auto;
+  color: white;
+  padding: 20px 40px;
+}
 
 
-/*center*/
+
+
+
+#intro-text-bottom-a{
+  margin: auto;
+}
+
+
+section {
+  padding: 100px 0; 
+}
+
 #header-center-text{
   text-align: center;
   display: block;
@@ -46,10 +121,20 @@ a {
 #text-center-in-box{
   text-align: center;
   display: flex;
+  margin: auto;
+  width: 1300px;
+}
+
+
+.service-image {
+  width: 217px;
+  height: 217px;
 }
 
 .box-center{
   text-align: center!important;
+  width: 1000px;
+  margin: 20px;
 }
 
 .service-center-box {
@@ -57,15 +142,48 @@ a {
   text-transform: none; 
 }
 
+
+
+
+
+
+
+#portfolio{
+  width: 1500px;
+  display: flex;
+  margin: auto;
+}
+
+#portfolio-holder{
+  text-align: center;
+  width: 1700px;
+  margin: auto;
+  text-align: center;
+
+}
+
+
+#portfolio-header-text{
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  margin: -100px 410px;
+}
+
+
 #portfolio .portfolio-item {
   right: 0;
-  margin: 0 0 15px; 
+  margin: auto; 
+  display: flex;
+  width: 500px;
+  height: 400px;
+  float: left;
 }
 
 .portfolio-image{
   height: 240px;
   width: 400px;
-
 }
 
 
@@ -75,47 +193,70 @@ a {
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer; 
+
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 400px;
+  height: 350px;
   transition: all ease 0.5s;
   opacity: 0;
   background: rgba(254, 209, 54, 0.9); 
+
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1; 
 }
 
+#portfolio-item-text{
+  position: absolute;
+  margin: 250px 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .timeline {
-  position: relative;
   padding: 0;
   list-style: none; 
+  width: 500px;
+  display: flex;
+  display: flex;
+  margin: 50px auto;
+}
+#timeline-ul{
+  list-style-type: none;
+}
+
+.about-us-item{
+  display: block;
+  margin: 50px auto;
 }
 
 .about-us-image{
   width: 320px;
   height: 240px;
+  
 
+}
+
+.about-us-item-div{
+  width: 100px;
 }
   
 
-.timeline-image {
-  position: absolute;
-  z-index: 100;
-  left: 0;
-  width: 80px;
-  height: 80px;
-  margin-left: 0;
-  text-align: center;
-  color: white;
-  border: 7px solid #e9ecef;
-  border-radius: 100%;
-  background-color: #fed136; 
-}
 
 .timeline-image h4 {
   font-size: 10px;
@@ -123,10 +264,19 @@ a {
   margin-top: 12px; 
 }
 
-.timeline-panel {
-  float: right;
+.timeline-panel-right {
   padding: 0 20px 0 100px;
   text-align: left; 
+  position: absolute;
+  margin: -200px 300px;
+}
+
+.timeline-panel-left {
+  padding: 0 20px 0 100px;
+  text-align: left; 
+  position: absolute;
+  text-align: right;
+  margin: -200px -700px;
 }
 
 .timeline-panel:before {
@@ -135,6 +285,21 @@ a {
   border-right-width: 15px;
   border-left-width: 0; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .team-member {
   margin-bottom: 50px;
@@ -155,6 +320,54 @@ a {
 
 .team-member p {
   margin-top: 0; 
+}
+
+
+#logo-container{
+  display: flex;
+  width: 1000px;
+  margin: auto;
+
+}
+
+.logo{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+#team-member-text{
+  text-align: center;
+  display: block;
+}
+
+#team-text-in-box{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  width: 1300px;
+}
+
+
+.team-image {
+  width: 259px;
+  height: 194px;
+}
+
+.team-center{
+  text-align: center!important;
+  width: 1000px;
+  margin: 20px;
+}
+
+.team-center-box {
+  margin: 15px 0;
+  text-transform: none; 
 }
 
 #contact {

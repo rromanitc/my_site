@@ -10,27 +10,35 @@
   </head>
 
   <body>
-    <nav class="nav">
-        <a href="#page-top">Start Bootstrap</a>
-        <button>Menu</button>
-        <div>
-          <div>
-            <a href="#services">Services</a>
-          </div>
-          <div>
-            <a href="#portfolio">Portfolio</a>
-          </div>
-          <div>
-            <a href="#about">About</a>
-          </div>
-          <div>
-            <a href="#team">Team</a>
-          </div>
-          <div>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">  
+    </script>
+
+    <nav id="nav">
+        
+      <ul id="nav-buttons">
+        <li id="nav-buttons-list-bootstrap">
+          <a href="#page-top">Start Bootstrap</a>
+        </li>
+        <li class="nav-buttons-list">
+          <a href="#services">Services</a>
+        </li>
+        <li class="nav-buttons-list">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-buttons-list">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-buttons-list">
+          <a href="#team">Team</a>
+        </li>
+        <li class="nav-buttons-list">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </nav>
 
 
@@ -39,7 +47,7 @@
         <div id="intro">
           <div>Welcome To Our Studio!</div>
           <div id="intro-text">It's Nice To Meet You</div>
-          <a href="#services">Tell Me More</a>
+          <a id="intro-text-bottom" href="#services">Tell Me More</a>
         </div>
       </div>
     </header>
@@ -55,14 +63,17 @@
         </div>
         <div id="text-center-in-box">
           <div class="box-center">
+            <img class="service-image" src="img/service/e-commers.png" alt="Service e-commers">
             <h4 class="service-center-box">E-Commerce</h4>
             <p>Ready to get your store online? No problem! With the best of the website builders you can get a great looking, easy-to-use online store up and running in no time.</p>
           </div>
           <div class="box-center">
+            <img class="service-image" src="img/service/web design.png" alt="Service web design">
             <h4 class="service-center-box">Responsive Design</h4>
             <p>Responsive website templates are well-suited for those developers who envision themselves having both fluid-width and adaptive website that aters for any possible screen resolution</p>
           </div>
           <div class="box-center">
+            <img class="service-image" src="img/service/web security.png" alt="Service web design">
             <h4 class="service-center-box">Web Security</h4>
             <p>Attacks on applications present the greatest threat to the security of organizations.</p>
           </div>
@@ -71,36 +82,32 @@
     </section>
 
     <section id="portfolio">
-      <div>
+      <div >
         <div>
-          <div>
+          <div id="portfolio-header-text">
             <h2>Portfolio</h2>
             <h3>On list bellow you can find our lates work.</h3>
           </div>
         </div>
-        <div>
+        <div id="portfolio-holder">
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div >
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/01-thumbnail.jpg" alt="Design company image">
+              <img class="portfolio-image" src="img/portfolio/01-thumbnail.jpg" alt="Portfolio 1 image">
             </a>
-            <div>
-              <h4>Design company</h4>
+            <div id="portfolio-item-text">
+              <h4>Threads</h4>
               <p>Illustration</p>
             </div>
           </div>
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div>
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/02-thumbnail.jpg" alt="Graphic Design image">
+              <img class="portfolio-image" src="img/portfolio/02-thumbnail.jpg" alt="Portfolio 2 image">
             </a>
-            <div>
+            <div id="portfolio-item-text">
               <h4>Explore</h4>
               <p>Graphic Design</p>
             </div>
@@ -108,58 +115,51 @@
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div>
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/03-thumbnail.jpg" alt="Photo studio company image">
+              <img class="portfolio-image" src="img/portfolio/03-thumbnail.jpg" alt="Portfolio 3 image">
             </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p>Photo studio company</p>
+            <div id="portfolio-item-text">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Finish</h4>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identity</p>
             </div>
           </div>
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div>
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/04-thumbnail.jpg" alt="Branding company image">
+              <img class="portfolio-image" src="img/portfolio/04-thumbnail.jpg" alt="Portfolio 4 image">
             </a>
-            <div class="portfolio-caption">
-              <h4>Brand</h4>
-              <p>Branding company</p>
+            <div id="portfolio-item-text">
+              <h4>&nbsp;&nbsp;&nbsp;&nbsp;  Lines</h4>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Branding</p>
             </div>
           </div>
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div>
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/05-thumbnail.jpg" alt="Software company image">
+              <img class="portfolio-image" src="img/portfolio/05-thumbnail.jpg" alt="Portfolio 5 image">
             </a>
-            <div>
-              <h4>Software Southwest</h4>
-              <p>Software company</p>
+            <div id="portfolio-item-text">
+              <h4>Southwest</h4>
+              <p>Website Design</p>
             </div>
           </div>
           <div class="portfolio-item">
             <a class="portfolio-link">
               <div class="portfolio-hover">
-                <div>
-                </div>
               </div>
-              <img class="portfolio-image" src="img/portfolio/06-thumbnail.jpg" alt="Window company image">
+              <img class="portfolio-image" src="img/portfolio/06-thumbnail.jpg" alt="Portfolio 6 image">
             </a>
-            <div>
+            <div id="portfolio-item-text">
               <h4>Window</h4>
-              <p>Window company</p>
+              <p>Photography</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <section id="about">
       <div>
@@ -168,28 +168,30 @@
             <h2>About US</h2>
           </div>
         </div>
-        <div>
-          <div>
-            <ul class="timeline">
-              <li>
-                <div>
-                  <img class="about-us-image" src="img/about/1.jpg" alt="Our First Sell image">
+        <div class="timeline">
+          <ul id="timeline-ul">
+            <li>
+              <div class="about-us-item">
+                <div class="about-us-item-div">
+                  <img class="about-us-image" src="img/about/1.jpg" alt="about us image">
                 </div>
-                <div class="timeline-panel">
+                <div class="timeline-panel-right">
                   <div class="timeline-heading">
                     <h4>2014</h4>
                     <h4>Our First Sell</h4>
                   </div>
                   <div class="timeline-body">
                     <p>In 2014 we sold our successful web design studio, and there was our first launch.</p>
-                  </div>
+                  </div>            
                 </div>
-              </li>
-              <li>
-                <div>
-                  <img class="about-us-image" src="img/about/2.jpg" alt="First Web Site image">
+              </div>
+            </li>
+            <li>
+              <div class="about-us-item">
+                <div class="about-us-item-div">
+                  <img class="about-us-image" src="img/about/2.jpg" alt="about us image">
                 </div>
-                <div class="timeline-panel">
+                <div class="timeline-panel-left">
                   <div class="timeline-heading">
                     <h4>March 2014</h4>
                     <h4>First Web Site</h4>
@@ -198,12 +200,14 @@
                     <p>Since then, the company released several popular themes and web sites.</p>
                   </div>
                 </div>
-              </li>
-              <li>
-                <div>
-                  <img class="about-us-image" src="img/about/3.jpg" alt="Elementor Page Builder image">
+              </div>
+            </li>
+            <li>
+              <div class="about-us-item">
+                <div class="about-us-item-div">
+                  <img class="about-us-image" src="img/about/3.jpg" alt="about us image">
                 </div>
-                <div class="timeline-panel">
+                <div class="timeline-panel-right">
                   <div class="timeline-heading">
                     <h4>2015</h4>
                     <h4>Elementor Page Builder</h4>
@@ -212,12 +216,15 @@
                     <p>Work started on the Elementor Page Builder, in order to create a fast, live, front-end editor for WordPress.</p>
                   </div>
                 </div>
-              </li>
-              <li>
-                <div>
-                  <img class="about-us-image" src="img/about/4.jpg" alt="Extreme Growth image">
+              </div>
+            </li>
+
+            <li>
+              <div class="about-us-item">
+                <div class="about-us-item-div">
+                  <img class="about-us-image" src="img/about/4.jpg" alt="about us image">
                 </div>
-                <div class="timeline-panel">
+                <div class="timeline-panel-left">
                   <div class="timeline-heading">
                     <h4>2016</h4>
                     <h4>Extreme Growth</h4>
@@ -226,78 +233,71 @@
                     <p>We shown extreme growth, passing 400,000 active installs in only 11 months.</p>
                   </div>
                 </div>
-              </li>
-              <li>
-                <div>
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>  
+            </li>
+            <div class="about-us-item">
+              <div>
+                <h4>Be Part
+                  <br>Of Our
+                  <br>Story!</h4>
+              </div>
+            </div>
+          </ul>
         </div>
       </div>
     </section>
 
      <!-- Team -->
+
     <section>
       <div>
-        <div>
+        <div id="team-member-text">
           <div>
             <h2>Our Amazing Team</h2>
             <h3>Lorem ipsum dolor sit amet consectetur.</h3>
           </div>
         </div>
-        <div>
-          <div>
-            <div class="team-member">
-              <img src="img/team/1.jpg" alt="Kay Garland image">
-              <h4>Kay Garland</h4>
+        <div id="team-text-in-box"">
+          <div class="team-center">
+            <img class="team-image" src="img/team/1.jpg" alt="team member image">
+            <h4 class="team-center-box">Kay Garland</h4>
               <p>Lead Designer</p>
-            </div>
           </div>
-          <div>
-            <div class="team-member">
-              <img src="img/team/2.jpg" alt="Larry Parker image">
-              <h4>Larry Parker</h4>
-              <p>Lead Marketer</p>
-            </div>
+          <div class="team-center">
+            <img class="team-image" src="img/team/2.jpg" alt="team member image">
+            <h4 class="team-center-box">Kay Garland</h4>
+              <p>Lead Designer</p>
           </div>
-          <div>
-            <div class="team-member">
-              <img src="img/team/3.jpg" alt="Diana Pertersen image">
-              <h4>Diana Pertersen</h4>
+          <div class="team-center">
+            <img class="team-image" src="img/team/3.jpg" alt="team member image">
+            <h4 class="team-center-box">Diana Pertersen</h4>
               <p>Lead Developer</p>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div>
-        <div>
-          <div>
-            <a href="#">
-              <img src="img/logos/envato.jpg" alt="envato logo image">
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="img/logos/designmodo.jpg" alt="designmodo logo image">
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img  src="img/logos/themeforest.jpg" alt="themeforest logo image">
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <img src="img/logos/creative-market.jpg" alt="creative logo image">
-            </a>
-          </div>
+      <div id="logo-container">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logos/envato.jpg" alt="logo image">
+          </a>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logos/designmodo.jpg" alt="logo image">
+          </a>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img  src="img/logos/themeforest.jpg" alt="logo image">
+          </a>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logos/creative-market.jpg" alt="logo image">
+          </a>
         </div>
       </div>
     </section>
@@ -312,32 +312,32 @@
         </div>
         <div>
           <div>
-            <form name="sentMessage" novalidate>
+            <form id="my-form">
               <div>
                 <div>
                   <div>
-                    <input type="text" placeholder="Your Name *">
+                    <input type="text" id="client-name" placeholder="Your Name *">
                     <p></p>
                   </div>
                   <div>
-                    <input type="email" placeholder="Your Email *" >
+                    <input type="email" id="client-email" placeholder="Your Email *" >
                     <p></p>
                   </div>
                   <div>
-                    <input type="tel" placeholder="Your Phone *">
+                    <input type="tel" id="client-phone" placeholder="Your Phone *">
                     <p></p>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <textarea placeholder="Your Message *"></textarea>
+                    <textarea id="client-message" placeholder="Your Message *"></textarea>
                     <p></p>
                   </div>
                 </div>
                 <div></div>
                 <div>
                   <div></div>
-                  <button type="submit">Send Message</button>
+                  <button type="submit" id="submit-form">Send Message</button>
                 </div>
               </div>
             </form>
@@ -346,6 +346,7 @@
       </div>
     </section>
 
+    <script src="js/index-form.js"></script> 
 
     <footer>
       <div>
