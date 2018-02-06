@@ -1,14 +1,21 @@
 body {
   overflow-x: hidden;
-  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  max-width: 1500px;
+  margin: auto;
+}
 
 p {
-  line-height: 1.75; }
+  line-height: 1.75; 
+}
 
 a {
-  color: #fed136; }
-  a:hover {
-    color: #fec503; }
+  color: #fed136; 
+}
+
+a:hover {
+  color: #fec503; 
+}
 
 .text-primary {
   color: #fed136 !important; }
@@ -19,7 +26,9 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
 #nav {
   background-color: #212529; 
 }
@@ -70,6 +79,34 @@ h6 {
 .nav-buttons-list a:hover {
     background-color: #111;
 }
+
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #212529; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
+
+
 
 
 #header-img {
@@ -152,13 +189,13 @@ section {
   width: 1500px;
   display: flex;
   margin: auto;
+  background-color: #f8f9fa;
 }
 
 #portfolio-holder{
   text-align: center;
-  width: 1700px;
+  width: 1500px;
   margin: auto;
-  text-align: center;
 
 }
 
@@ -168,7 +205,7 @@ section {
   width: 700px;
   margin: auto;
   position: absolute;
-  margin: -100px 410px;
+  margin: -100px 400px;
 }
 
 
@@ -224,39 +261,47 @@ section {
 
 
 
+#team-div{
+  background-color: #f8f9fa;
+  padding: 20px;
+}
 
-
-
+#about-us-header-text{
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  margin: -60px 410px;
+}
 
 .timeline {
   padding: 0;
   list-style: none; 
   width: 500px;
   display: flex;
-  display: flex;
-  margin: 50px auto;
+  margin: auto;
 }
+
 #timeline-ul{
   list-style-type: none;
 }
 
 .about-us-item{
   display: block;
-  margin: 50px auto;
+  margin: auto;
+  margin: 50px;
 }
 
 .about-us-image{
-  width: 320px;
+  width:  320px;
   height: 240px;
-  
-
 }
 
 .about-us-item-div{
   width: 100px;
 }
   
-
+  
 
 .timeline-image h4 {
   font-size: 10px;
@@ -268,7 +313,7 @@ section {
   padding: 0 20px 0 100px;
   text-align: left; 
   position: absolute;
-  margin: -200px 300px;
+  margin: -210px 300px;
 }
 
 .timeline-panel-left {
@@ -276,7 +321,7 @@ section {
   text-align: left; 
   position: absolute;
   text-align: right;
-  margin: -200px -700px;
+  margin: -210px -500px;
 }
 
 .timeline-panel:before {
@@ -318,16 +363,41 @@ section {
   text-transform: none; 
 }
 
-.team-member p {
-  margin-top: 0; 
+#team-member-text{
+  text-align: center;
+  display: block;
 }
+
+#team-text-in-box{
+  text-align: center;
+  display: flex;
+  margin: auto;
+  width: 1300px;
+}
+
+.team-image {
+  width: 259px;
+  height: 194px;
+}
+
+.team-center{
+  text-align: center;
+  width: 1000px;
+  margin: 20px;
+}
+
+.team-center-box {
+  margin: 15px 0;
+  text-transform: none; 
+}
+
+
 
 
 #logo-container{
   display: flex;
   width: 1000px;
   margin: auto;
-
 }
 
 .logo{
@@ -341,39 +411,109 @@ section {
 
 
 
-#team-member-text{
-  text-align: center;
-  display: block;
-}
-
-#team-text-in-box{
-  text-align: center;
-  display: flex;
-  margin: auto;
-  width: 1300px;
-}
-
-
-.team-image {
-  width: 259px;
-  height: 194px;
-}
-
-.team-center{
-  text-align: center!important;
-  width: 1000px;
-  margin: 20px;
-}
-
-.team-center-box {
-  margin: 15px 0;
-  text-transform: none; 
-}
-
 #contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
-    background-repeat: no-repeat;
-    background-position: center; 
-  }
+  background-repeat: no-repeat;
+  background-position: center; 
+  padding: 30px;
+}
 
+
+
+
+
+
+#contact{
+  color: white;
+  text-align: center;
+}
+
+#my-form{
+  margin: auto;
+  display: block;
+}
+
+#client-message{
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+#client-name{
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+#client-email{
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+#client-phone{
+  display: flex;
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+#submit-form{
+  display: flex;
+  width: 200px;
+  margin: auto;
+  background-color: #fec810;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#submit-form:hover{
+    background-color: #ffc107;
+    color: white;
+}
+
+/*#client-name{
+  position: absolute;
+  margin: -200px 700px;
+}*/
+
+
+
+
+
+#footer-container{
+  display: flex;
+  width: 1000px;
+  margin: auto;
+}
+
+.footer-blocks{
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.list-inline-item{
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+
+.footer-privacy a{
+  display: flex;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none
+}
