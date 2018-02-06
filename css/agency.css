@@ -82,29 +82,16 @@ h6 {
 
 
 
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    background-color: transparent; }
-    #mainNav .navbar-brand {
-      font-size: 1.75em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s; }
-    #mainNav .navbar-nav .nav-item .nav-link {
-      padding: 1.1em 1em !important; }
-    #mainNav.navbar-shrink {
-      padding-top: 0;
-      padding-bottom: 0;
-      background-color: #212529; }
-      #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 0; } }
+@media (max-width: 992px) {
+  #nav {
+    display: block;
+    width: 980px;
+  }
+  #header-img{
+    display: block;
+    width: 980px;    
+  }
+ }
 
 
 
@@ -146,9 +133,33 @@ h6 {
 }
 
 
+@media (max-width: 992px) {
+  #header-center-text {
+    display: block;
+  }
+
+  #text-center-in-box {
+    margin: 0 !important;
+    width: 500px !important;
+    display: block !important;
+  }
+  .box-center{
+    position: relative;
+    width: 500px;    
+  }
+ }
+
 section {
   padding: 100px 0; 
 }
+
+@media (min-width: 768px) {
+    section {
+        padding:150px 0
+    }
+}
+
+
 
 #header-center-text{
   text-align: center;
@@ -182,8 +193,19 @@ section {
 
 
 
+/*@media (max-width: 992px) {
+  #portfolio-holder {
+    display: block;
+  }
 
+  .portfolio-item {
+    margin: 0 !important;
+    width: 500px !important;
+    display: block !important;
+  }
 
+ }
+*/
 
 #portfolio{
   width: 1500px;
