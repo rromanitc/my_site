@@ -247,7 +247,7 @@ section {
   opacity: 1; 
 }
 
-#portfolio-item-text{
+.portfolio-item-text{
   position: absolute;
   margin: 250px 200px;
 
