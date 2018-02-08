@@ -311,12 +311,12 @@ section {
 }
 
 .about-us-image {
-    width: 320px;
-    height: 240px;
+    width: 100%;
 }
 
 .about-us-item-div {
-    width: 100px;
+    width: 200px;
+    margin-left: 70px;
 }
 
 @media (max-width: 992px) {
@@ -352,7 +352,7 @@ section {
     padding: 0 20px 0 100px;
     text-align: left;
     position: absolute;
-    margin: -210px 300px;
+    margin: -150px 300px;
 }
 
 .timeline-panel-left {
@@ -360,7 +360,7 @@ section {
     text-align: left;
     position: absolute;
     text-align: right;
-    margin: -210px -500px;
+    margin: -150px -500px;
 }
 
 .timeline-panel:before {
